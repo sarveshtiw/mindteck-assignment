@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .inner
+    form.form(action="/register" method="POST")
+      h2 Register your restaurant
+      label(for="name") Restaurant Name
+      input(type="text" name="name" required)
+      label(for="text") Registration details
+      input(type="text" name="reg_details" required) 
+      label(for="email") Email
+      input(type="email" name="email" required) 
+      label(for="text") Address
+      input(type="text" name="address" required) 
+      label(for="text") Geo Location
+      label(for="text") Latitute
+      input(type="time" name="latitute" required)
+      label(for="text") Longitude
+      input(type="time" name="longitude" required) 
+      label(for="text") Operation Timing
+      label(for="text") From
+      input(type="time" name="from_timing" required)
+      label(for="text") To
+      input(type="time" name="to_timing" required) 
+      label(for="text") Contact Number
+      input(type="text" name="contact_number" required)
+      input.button(type="submit" value="Register")
